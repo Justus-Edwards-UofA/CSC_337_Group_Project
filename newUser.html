@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Not Steam New User</title>
+    </head>
+    <body>
+        <h1>Enter New Account Information</h1>
+        <form action="/home" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password"><br>
+            <input type="radio" id="user_type" name="type" group="account_type" value="user" checked> User<br>
+            <input type="radio" id="developer_type" name="type" group="account_type" value="developer"> Developer<br>
+            <button type="submit" value="Submit">Create</button>
+        </form>
+        //add some logic to check if username already exists
+        //add some logic to check if password is strong enough
+        //add some logic to check if password and confirm password match
+        //add some logic to check if username and password are not empty
+        //add some logic to add user to database
+    </body>
+</html>
